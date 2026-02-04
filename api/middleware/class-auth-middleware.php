@@ -29,7 +29,7 @@ class Auth_Middleware {
         $token = $matches[1];
         
         // Verify token
-        $jwt_auth = JWT_Auth::get_instance();
+        $jwt_auth = \Coopvest\JWT_Auth::get_instance();
         $payload = $jwt_auth->verify_token($token);
         
         if (is_wp_error($payload)) {
@@ -57,7 +57,7 @@ class Auth_Middleware {
         $user_id = $request->get_param('user_id');
         
         // Check if user has admin role
-        $role_manager = Role_Manager::get_instance();
+        $role_manager = \Coopvest\Role_Manager::get_instance();
         
         if (!$role_manager->has_permission($user_id, 'admin.*') && 
             !$role_manager->has_permission($user_id, 'settings.*') &&
@@ -80,7 +80,7 @@ class Auth_Middleware {
             }
             
             $user_id = $request->get_param('user_id');
-            $role_manager = Role_Manager::get_instance();
+            $role_manager = \Coopvest\Role_Manager::get_instance();
             
             if (!$role_manager->has_permission($user_id, $permission)) {
                 return new \WP_Error('forbidden', "Permission '{$permission}' required", ['status' => 403]);
@@ -102,7 +102,7 @@ class Auth_Middleware {
             }
             
             $user_id = $request->get_param('user_id');
-            $role_manager = Role_Manager::get_instance();
+            $role_manager = \Coopvest\Role_Manager::get_instance();
             
             if (!$role_manager->has_role($user_id, $role)) {
                 return new \WP_Error('forbidden', "Role '{$role}' required", ['status' => 403]);
@@ -132,7 +132,7 @@ class Auth_Middleware {
         return function($request) use ($feature_name) {
             $user_id = $request->get_param('user_id');
             
-            $feature_flags = Feature_Flags::get_instance();
+            $feature_flags = \Coopvest\Feature_Flags::get_instance();
             
             if (!$feature_flags->is_enabled($feature_name, $user_id)) {
                 return new \WP_Error('feature_disabled', "Feature '{$feature_name}' is not enabled", ['status' => 403]);
@@ -157,7 +157,7 @@ class Auth_Middleware {
         
         if (!in_array($client_ip, $allowed_ips)) {
             // Log the unauthorized attempt
-            $audit = Audit_Logger::get_instance();
+            $audit = \Coopvest\Audit_Logger::get_instance();
             $audit->log('admin.ip_blocked', [
                 'entity_type' => 'admin_access',
                 'new_value' => [
@@ -176,7 +176,7 @@ class Auth_Middleware {
      * Rate limiting check
      */
     public static function check_rate_limit($request) {
-        $limiter = Rate_Limiter::get_instance();
+        $limiter = \Coopvest\Rate_Limiter::get_instance();
         
         $user_id = $request->get_param('user_id') ?? $_SERVER['REMOTE_ADDR'] ?? 'anonymous';
         

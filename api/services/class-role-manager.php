@@ -29,7 +29,7 @@ class Role_Manager {
         
         $table = $wpdb->prefix . 'coopvest_roles';
         
-        $roles = $wpdb->get_results($table, ARRAY_A);
+        $roles = $wpdb->get_results("SELECT * FROM {$table}", ARRAY_A);
         
         return array_map(function($role) {
             $role['permissions'] = json_decode($role['permissions'], true);
