@@ -1,0 +1,325 @@
+# Copyright (C) 2024 Coopvest Africa
+# This file is distributed under the GNU General Public License v3.0.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Coopvest Admin Dashboard 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: comments.php:22
+msgid "One thought on &ldquo;%s&quot;"
+msgstr ""
+
+#: comments.php:29
+msgid "%1$s thoughts on &ldquo;%2$s&quot;"
+msgstr ""
+
+#: template-parts/author-bio.php:28
+msgid "About %s"
+msgstr ""
+
+#: template-parts/author-bio.php:40
+msgid "View all posts by %s"
+msgstr ""
+
+#: template-parts/content.php:47
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/content.php:47
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/content.php:47
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/content.php:54
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-single.php:56
+msgid "Continue reading %s"
+msgstr ""
+
+#: template-parts/content-single.php:78
+msgid "About %s"
+msgstr ""
+
+#: template-parts/content-single.php:88
+msgid "View all posts by %s"
+msgstr ""
+
+#: templates/dashboard.php:218
+msgid "Dashboard"
+msgstr ""
+
+#: templates/dashboard.php:222
+msgid "Members"
+msgstr ""
+
+#: templates/dashboard.php:226
+msgid "Loans"
+msgstr ""
+
+#: templates/dashboard.php:230
+msgid "Investments"
+msgstr ""
+
+#: templates/dashboard.php:234
+msgid "Wallet"
+msgstr ""
+
+#: templates/dashboard.php:242
+msgid "Reports"
+msgstr ""
+
+#: templates/dashboard.php:246
+msgid "Analytics"
+msgstr ""
+
+#: templates/dashboard.php:250
+msgid "Settings"
+msgstr ""
+
+#: templates/dashboard.php:254
+msgid "Profile"
+msgstr ""
+
+#: templates/dashboard.php:278
+msgid "Total Members"
+msgstr ""
+
+#: templates/dashboard.php:289
+msgid "Active Loans"
+msgstr ""
+
+#: templates/dashboard.php:300
+msgid "Investments"
+msgstr ""
+
+#: templates/dashboard.php:311
+msgid "Total Posts"
+msgstr ""
+
+#: templates/dashboard.php:325
+msgid "Recent Activity"
+msgstr ""
+
+#: templates/dashboard.php:326
+msgid "View All"
+msgstr ""
+
+#: templates/dashboard.php:351
+msgid "No recent activity."
+msgstr ""
+
+#: templates/dashboard.php:356
+msgid "Quick Actions"
+msgstr ""
+
+#: templates/dashboard.php:360
+msgid "Add Member"
+msgstr ""
+
+#: templates/dashboard.php:364
+msgid "New Loan"
+msgstr ""
+
+#: templates/dashboard.php:368
+msgid "New Investment"
+msgstr ""
+
+#: templates/dashboard.php:372
+msgid "Export Report"
+msgstr ""
+
+#: comments.php:61
+msgid "Comment"
+msgstr ""
+
+#: comments.php:63
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:72
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:73
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:74
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:75
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:88
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:89
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:93
+msgid "Your email address will not be published."
+msgstr ""
+
+#: functions.php:165
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:166
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:167
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:168
+msgid "Dashboard Menu"
+msgstr ""
+
+#: functions.php:178
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:179
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:188
+msgid "Dashboard Sidebar"
+msgstr ""
+
+#: functions.php:189
+msgid "Widgets for the dashboard area."
+msgstr ""
+
+#: functions.php:198
+msgid "Footer Column 1"
+msgstr ""
+
+#: functions.php:199
+msgid "First footer column."
+msgstr ""
+
+#: functions.php:208
+msgid "Footer Column 2"
+msgstr ""
+
+#: functions.php:209
+msgid "Second footer column."
+msgstr ""
+
+#: functions.php:218
+msgid "Footer Column 3"
+msgstr ""
+
+#: functions.php:219
+msgid "Third footer column."
+msgstr ""
+
+#: functions.php:261
+msgid "Members"
+msgstr ""
+
+#: functions.php:262
+msgid "Member"
+msgstr ""
+
+#: functions.php:275
+msgid "Loans"
+msgstr ""
+
+#: functions.php:276
+msgid "Loan"
+msgstr ""
+
+#: functions.php:289
+msgid "Investments"
+msgstr ""
+
+#: functions.php:290
+msgid "Investment"
+msgstr ""
+
+#: archive.php:34
+#: index.php:47
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:37
+msgid "There are no posts in this archive yet. Try checking back later."
+msgstr ""
+
+#: index.php:42
+msgid "Previous"
+msgstr ""
+
+#: index.php:43
+msgid "Next"
+msgstr ""
+
+#: index.php:57
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: index.php:59
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
+msgstr ""
+
+#: footer.php:24
+msgid "&copy; %1$s %2$s. All rights reserved."
+msgstr ""
+
+#: header.php:66
+msgid "Notifications"
+msgstr ""
+
+#: header.php:74
+msgid "Profile"
+msgstr ""
+
+#: header.php:78
+msgid "Dashboard"
+msgstr ""
+
+#: header.php:85
+msgid "Logout"
+msgstr ""
+
+#: header.php:89
+msgid "Login"
+msgstr ""
+
+#: index.php:27
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:46
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:51
+msgid "Edit Page"
+msgstr ""
+
+#: template-parts/content-single.php:62
+msgid "Pages:"
+msgstr ""

@@ -1,0 +1,178 @@
+/*
+Theme Name: Coopvest Admin Dashboard
+Template: coopvest-admin
+*/
+
+/* RTL Specific Styles */
+
+/* Reset for RTL */
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+/* Header */
+.header-actions {
+    flex-direction: row-reverse;
+}
+
+/* Sidebar */
+.sidebar {
+    left: auto;
+    right: 0;
+}
+
+.nav-item svg {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+/* Cards */
+.card-header {
+    flex-direction: row-reverse;
+}
+
+/* Stats */
+.stat-card-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+/* Tables */
+th {
+    text-align: right;
+}
+
+td {
+    text-align: right;
+}
+
+/* Forms */
+.form-label {
+    text-align: right;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    text-align: right;
+}
+
+/* Buttons */
+.btn svg:first-child:last-child {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+/* Tabs */
+.tabs {
+    flex-direction: row-reverse;
+}
+
+/* Modal */
+.modal-header {
+    flex-direction: row-reverse;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+/* Footer */
+.footer-inner {
+    flex-direction: row-reverse;
+}
+
+/* Pagination */
+.pagination-previous::before {
+    content: '\f341';
+    font-family: 'dashicons';
+}
+
+.pagination-next::after {
+    content: '\f345';
+    font-family: 'dashicons';
+}
+
+/* Dropdown */
+.dropdown-menu {
+    right: auto;
+    left: 0;
+    text-align: right;
+}
+
+/* Navigation */
+.main-navigation ul ul {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.main-navigation li {
+    float: right;
+}
+
+/* Dashboard */
+.dashboard-sidebar {
+    left: auto;
+    right: 0;
+}
+
+.dashboard-nav-item {
+    flex-direction: row-reverse;
+}
+
+.dashboard-nav-icon {
+    margin-left: 0.75rem;
+    margin-right: 0;
+}
+
+.dashboard-main {
+    margin-left: 0;
+    margin-right: 260px;
+}
+
+@media (max-width: 1024px) {
+    .dashboard-sidebar {
+        transform: translateX(100%);
+    }
+
+    .dashboard-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .dashboard-main {
+        margin-right: 0;
+    }
+}
+
+/* Comments */
+.comment-author {
+    float: right;
+}
+
+.comment-body {
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+.comment-avatar {
+    left: auto;
+    right: -80px;
+}
+
+.reply {
+    text-align: left;
+}
+
+/* Widgets */
+.widget {
+    text-align: right;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
