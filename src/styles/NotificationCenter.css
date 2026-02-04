@@ -1,0 +1,100 @@
+/* NotificationCenter Styles */
+.notification-center {
+  padding: 24px;
+}
+
+.notification-center .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.notification-center .page-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.unread-badge {
+  margin-left: 12px;
+}
+
+.notification-card {
+  margin-bottom: 24px;
+}
+
+.notification-item {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.notification-item:hover {
+  background: #fafafa;
+}
+
+.notification-item.unread {
+  background: #f6ffed;
+}
+
+.notification-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.notification-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-time {
+  font-size: 12px;
+}
+
+.stats-card {
+  margin-top: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item .ant-typography {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}

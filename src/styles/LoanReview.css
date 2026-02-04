@@ -1,0 +1,98 @@
+/* LoanReview Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.loan-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.loan-review-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.review-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-card .value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.loan-table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.status-tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-approved {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.review-drawer .ant-drawer-body {
+  padding: 24px;
+}
+
+.loan-detail-section {
+  margin-bottom: 24px;
+}
+
+.loan-detail-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.decision-buttons .ant-btn {
+  flex: 1;
+  height: 44px;
+  font-size: 16px;
+}

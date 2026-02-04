@@ -1,0 +1,149 @@
+/* SheetApproval Styles */
+.sheet-approval {
+  padding: 24px;
+}
+
+.approval-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.approval-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.approval-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-card .value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.approval-table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-approved {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-review {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.approval-drawer .ant-drawer-body {
+  padding: 24px;
+}
+
+.sheet-details {
+  margin-bottom: 24px;
+}
+
+.sheet-details h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.changes-list {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.change-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.change-item:last-child {
+  border-bottom: none;
+}
+
+.change-field {
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.change-old {
+  color: #dc2626;
+  text-decoration: line-through;
+}
+
+.change-new {
+  color: #059669;
+}
+
+.decision-section {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.decision-buttons .ant-btn {
+  flex: 1;
+  height: 44px;
+}
+
+.history-timeline {
+  margin-top: 16px;
+}

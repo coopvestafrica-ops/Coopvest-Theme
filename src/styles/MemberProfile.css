@@ -1,0 +1,101 @@
+/* MemberProfile Styles */
+.member-profile {
+  padding: 24px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.profile-info h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+.profile-info .member-id {
+  color: #666;
+  font-size: 14px;
+}
+
+.member-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.stat-item .value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.profile-tabs {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.contribution-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.loan-history-table {
+  margin-top: 16px;
+}
+
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.document-item:hover {
+  background: #f3f4f6;
+}
+
+.activity-timeline {
+  margin-top: 16px;
+}
