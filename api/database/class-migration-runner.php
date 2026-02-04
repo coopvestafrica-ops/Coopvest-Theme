@@ -53,7 +53,7 @@ class Migration_Runner {
                 'down' => [$this, 'migrate_drop_loans_table']
             ],
             '2024_01_01_000005_create_guarantors_table' => [
-                'description' => Create guarantors table',
+                'description' => 'Create guarantors table',
                 'up' => [$this, 'migrate_create_guarantors_table'],
                 'down' => [$this, 'migrate_drop_guarantors_table']
             ],
@@ -73,7 +73,7 @@ class Migration_Runner {
                 'down' => [$this, 'migrate_drop_audit_logs_table']
             ],
             '2024_01_01_000009_create_roles_table' => [
-                'description' => Create roles table',
+                'description' => 'Create roles table',
                 'up' => [$this, 'migrate_create_roles_table'],
                 'down' => [$this, 'migrate_drop_roles_table']
             ],
