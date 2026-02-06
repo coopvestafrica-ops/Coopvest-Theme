@@ -151,6 +151,9 @@ $active_investments = wp_count_posts( 'investment' )->publish;
 
 <!-- Main Content -->
 <main class="admin-main">
+    <!-- React Root Element -->
+    <div id="root"></div>
+
     <!-- Header -->
     <header class="admin-header">
         <div class="admin-header-left">

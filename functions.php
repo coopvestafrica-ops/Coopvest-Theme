@@ -156,6 +156,22 @@ function coopvest_scripts() {
     // Main stylesheet.
     wp_enqueue_style( 'coopvest-style', get_stylesheet_uri(), array(), COOPVEST_THEME_VERSION );
 
+    // React Assets
+    if ( file_exists( COOPVEST_THEME_DIR . '/dist/assets/index.css' ) ) {
+        wp_enqueue_style( 'coopvest-react-style', COOPVEST_THEME_URI . '/dist/assets/index.css', array(), COOPVEST_THEME_VERSION );
+    }
+
+    if ( file_exists( COOPVEST_THEME_DIR . '/dist/assets/index.js' ) ) {
+        wp_enqueue_script( 'coopvest-react-app', COOPVEST_THEME_URI . '/dist/assets/index.js', array(), COOPVEST_THEME_VERSION, true );
+        
+        // Pass data to React
+        wp_localize_script( 'coopvest-react-app', 'coopvestData', array(
+            'apiUrl' => esc_url_raw( rest_url( 'coopvest/v1' ) ),
+            'nonce'  => wp_create_nonce( 'wp_rest' ),
+            'siteUrl' => get_site_url(),
+        ) );
+    }
+
     // Dashicons.
     wp_enqueue_style( 'dashicons' );
 
